@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Limidation Construction Inc.</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <a href="index.html">
+      <img src="images/logo-mark.png" alt="Limidation Construction Inc.">
+      <span class="brand-text">
+        <span class="brand-en">LIMIDATION</span>
+        <span class="brand-zh">砺地</span>
+      </span>
+    </a>
+  </div>
+  <nav>
+    <a href="index.html"><span data-en>Home</span><span data-zh>首页</span></a>
+    <a href="services.html"><span data-en>Services</span><span data-zh>服务项目</span></a>
+    <a href="process.html"><span data-en>Process</span><span data-zh>施工流程</span></a>
+    <a href="team.html"><span data-en>Teams</span><span data-zh>合作团队</span></a>
+    <a href="contact.html"><span data-en>Contact</span><span data-zh>联系我们</span></a>
+  </nav>
+  <button id="lang-toggle">中文</button>
+</header>
+
+<!-- 团队信息将由 JS 渲染进这里 -->
+<section id="profile-root">
+  <p style="text-align:center; color:var(--text-muted);">
+    <span data-en>Loading…</span><span data-zh>加载中…</span>
+  </p>
+</section>
+
+<!-- 免责声明 — 固定内容，不随团队变化 -->
+<section class="alt">
+  <div>
+    <div class="disclaimer">
+      <h3><span data-en>Important Notice</span><span data-zh>重要声明</span></h3>
+      <p>
+        <span data-en>The teams featured on this site are independently operated partner teams. They contract for and carry out their own projects. Limidation Construction Inc. is not a party to, and takes no part in, the contracting, execution, or after-service of their independent work.</span>
+        <span data-zh>本站展示的施工团队均为独立经营的合作方，各自承接并履行自己的项目。Limidation Construction Inc. 不参与其独立业务的签约、施工与售后。</span>
+      </p>
+      <p>
+        <span data-en>If you would like Limidation Construction Inc. to coordinate your renovation project, please get in touch with us directly through our <a href="contact.html">Contact</a> page.</span>
+        <span data-zh>若您希望由 Limidation Construction Inc. 统筹您的整装项目，请通过<a href="contact.html">联系我们</a>页面与我们直接沟通。</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0; text-align:center;">
+  <a href="team.html" class="btn-outline">
+    <span data-en>View All Partner Teams</span><span data-zh>查看全部合作团队</span>
+  </a>
+</section>
+
+<footer>
+  <p>&copy; 2026 Limidation Construction Inc. · limidation.com</p>
+</footer>
+
+<script src="JS/teams.js"></script>
+<script src="JS/lang.js"></script>
+<script src="JS/profile.js"></script>
+</body>
+</html>

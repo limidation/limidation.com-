@@ -1,0 +1,1 @@
+把 Tony 团队的作品图放在这个文件夹里，命名 indoor-01.jpg … indoor-09.jpg / outdoor-01.jpg … outdoor-09.jpg，然后在 JS/teams.js 里填入路径。放好照片后本文件可删除。

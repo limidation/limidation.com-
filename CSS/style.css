@@ -1,0 +1,327 @@
+:root {
+  --brand-dark: #1a1a1a;
+  --brand-accent: #1f3864;
+  --brand-accent-light: #2d4f8a;
+  --text-light: #f5f5f0;
+  --text-muted: #8a8a8a;
+  --bg-page: #ffffff;
+  --bg-section: #f4f5f7;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+  color: var(--brand-dark);
+  background: var(--bg-page);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--bg-page);
+  color: var(--brand-dark);
+  border-bottom: 1px solid #e2e4e8;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+header .brand a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+header .brand img { height: 52px; display: block; }
+
+header .brand .brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+header .brand .brand-en {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--brand-accent);
+}
+
+header .brand .brand-zh {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  color: var(--text-muted);
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--brand-dark);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav a:hover { color: var(--brand-accent); }
+
+#lang-toggle {
+  background: transparent;
+  border: 1px solid #c9ccd3;
+  color: var(--brand-dark);
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+#lang-toggle:hover { border-color: var(--brand-accent); color: var(--brand-accent); }
+
+.hero {
+  background: var(--brand-accent);
+  color: var(--text-light);
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.hero h1 { font-size: 2.2rem; margin-bottom: 16px; }
+
+.hero .slogan-zh {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.hero .slogan-en {
+  font-size: 1.05rem;
+  color: #b9c4da;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  color: #d4dbe8;
+  max-width: 580px;
+  margin: 0 auto 28px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--brand-accent);
+  color: var(--text-light);
+  padding: 12px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover { background: var(--brand-accent-light); }
+
+.hero .btn {
+  background: var(--text-light);
+  color: var(--brand-accent);
+}
+
+.hero .btn:hover { background: #ffffff; }
+
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid var(--brand-accent);
+  color: var(--brand-accent);
+  padding: 10px 22px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.btn-outline:hover { background: var(--brand-accent); color: var(--text-light); }
+
+section {
+  padding: 60px 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section.alt { background: var(--bg-section); max-width: none; }
+section.alt > div { max-width: 1000px; margin: 0 auto; }
+
+h2 { font-size: 1.6rem; margin-bottom: 24px; text-align: center; }
+h3 { font-size: 1.1rem; margin-bottom: 8px; }
+
+.lead {
+  text-align: center;
+  color: var(--text-muted);
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--bg-page);
+  border: 1px solid #e2e4e8;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body { padding: 16px; }
+.card-body h3 { margin-bottom: 6px; font-size: 1.05rem; }
+.card-body p { color: var(--text-muted); font-size: 0.9rem; }
+
+/* 照片占位框 —— 用于尚未上传照片的作品位 */
+.photo-placeholder {
+  width: 100%;
+  height: 190px;
+  background: #e8eaee;
+  border: 1px dashed #c3c7cf;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 8px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+/* 流程步骤 */
+.step {
+  border-left: 3px solid var(--brand-accent);
+  padding-left: 20px;
+  margin-bottom: 36px;
+}
+
+.step:last-child { margin-bottom: 0; }
+
+.step-num {
+  color: var(--brand-accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+/* 团队卡片 */
+.team-card {
+  background: var(--bg-page);
+  border: 1px solid #e2e4e8;
+  border-radius: 6px;
+  padding: 24px;
+}
+
+.team-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  border: 1px solid #d5d8de;
+  border-radius: 3px;
+  padding: 3px 8px;
+  margin-bottom: 12px;
+}
+
+/* 平台图标按钮 */
+.platform-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.platform-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #d5d8de;
+  border-radius: 4px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  cursor: default;
+}
+
+.platform-btn:hover { border-color: var(--brand-accent); color: var(--brand-accent); }
+
+/* 免责声明区块 */
+.disclaimer {
+  max-width: 760px;
+  margin: 0 auto;
+  border: 1px solid #dfe2e7;
+  border-radius: 6px;
+  padding: 24px;
+  background: var(--bg-page);
+}
+
+.disclaimer h3 { font-size: 1rem; margin-bottom: 12px; }
+.disclaimer p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.8; margin-bottom: 10px; }
+.disclaimer p:last-child { margin-bottom: 0; }
+.disclaimer a { color: var(--brand-accent); }
+
+form {
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+label { font-size: 0.9rem; font-weight: 600; }
+
+input, textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+textarea { min-height: 120px; resize: vertical; }
+
+button[type="submit"] {
+  background: var(--brand-accent);
+  border: none;
+  color: var(--text-light);
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button[type="submit"]:hover { background: var(--brand-accent-light); }
+
+footer {
+  background: var(--brand-accent);
+  color: #b9c4da;
+  text-align: center;
+  padding: 24px;
+  font-size: 0.85rem;
+}
+
+footer a { color: #d4dbe8; }
+
+html[data-lang="en"] [data-zh] { display: none; }
+html[data-lang="zh"] [data-en] { display: none; }
