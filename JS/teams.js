@@ -57,7 +57,7 @@ var TEAMS = [
     bioZh: "大温地区 | 专注室内外装修",
     bioEn: "Greater Vancouver | Interior and exterior renovation",
     links: {
-      youtube: "#",
+      youtube: "https://www.youtube.com/playlist?list=PLRi8zG9qrBJw",
       xiaohongshu: "#",
       instagram: "#",
       facebook: "#"
